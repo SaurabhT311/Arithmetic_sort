@@ -38,4 +38,11 @@ do
 	done
 done
 
-echo ${valsInArr[@]}
+echo " Values in Descending order : "${valsInArr[@]}
+
+echo " Values in Ascending order : "
+
+for (( i = $arrLength-1 ; i >= 0 ; i-- ))
+do
+		echo ${valsInArr[$i]}
+done
